@@ -8,6 +8,6 @@ const Simpson = ({simpson}) => {
             <div>info:{info}</div>
             <img src={photo} alt={name}/>
         </div>
-    )
+    )}
 
 export {Simpson};
