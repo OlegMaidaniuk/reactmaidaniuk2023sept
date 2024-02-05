@@ -1,18 +1,24 @@
-const Character =
-    // ({img, name})
-    ({characte}) => {
-        const {name, img} = characte;
-        // const {img, name} = props;
-        // console.log(props);
-        return (
-            <div>
-                <h1>{name}</h1>
-                <img
-                    src={img}
-                    alt={name}
-                />
-            </div>
-        );
-    };
+const Character = ({character}) => {
+    const {
+        id,
+        name,
+        status,
+        species,
+        gender,
+        image
+    } = character;
+
+
+    return (
+        <div>
+            <div>id:{id}</div>
+            <div>name:{name}</div>
+            <div>status:{status}</div>
+            <div>species:{species}</div>
+            <div>gender:{gender}</div>
+            <img src={image} alt={name}/>
+        </div>
+    );
+};
 
 export {Character};
