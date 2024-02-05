@@ -1,5 +1,5 @@
 
-const Character2 = () => {
+const Characters = () => {
     return (
         <div>
             <h1>Рік</h1>
@@ -8,4 +8,4 @@ const Character2 = () => {
     );
 };
 
-export {Character2};
+export {Characters};
