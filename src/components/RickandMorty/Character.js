@@ -1,14 +1,5 @@
 const Character = ({character}) => {
-    const {
-        id,
-        name,
-        status,
-        species,
-        gender,
-        image
-    } = character;
-
-
+    const {id, name, status, species, gender, image} = character;
     return (
         <div>
             <div>id:{id}</div>
@@ -20,5 +11,4 @@ const Character = ({character}) => {
         </div>
     );
 };
-
 export {Character};
