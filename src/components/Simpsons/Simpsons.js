@@ -1,3 +1,4 @@
+import {Simpson} from "./Simpson";
 const Simpsons = () => {
     const simpsons = [
         {
@@ -70,7 +71,7 @@ const Simpsons = () => {
 
     return (
         <div>
-            {simpsons.map(value, index)=><Simpson key={index} simpson={value}/>}
+            {simpsons.map((simpson, index)=><Simpson key={index} simpson={simpson}/>)}
         </div>
     );
 };
