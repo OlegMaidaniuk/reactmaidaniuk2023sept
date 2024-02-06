@@ -1,14 +1,11 @@
 import {User} from "../User/User";
 import {useEffect, useState} from "react";
-import axios from "axios";
-import {axiosService} from "../../../services/axiosService";
-import {urls} from "../../../constants/urls";
 import {userService} from "../../../services/userService";
 import {UserDetails} from "../UserDetails/UserDetails";
 import css from './Users.module.css'
 
 const Users = () => {
-    const [users, setUsers] = useState([])
+    let [users, setUsers] = useState([])
     const [userDetails, setUserDetails] = useState(null);
 
     useEffect(() => {
