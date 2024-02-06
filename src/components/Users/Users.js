@@ -1,6 +1,6 @@
 import {User} from "../User/User";
 import {useEffect, useState} from "react";
-import {userService} from "../../../services/userService";
+import {userService} from "../services/userService";
 import {UserDetails} from "../UserDetails/UserDetails";
 import css from './Users.module.css'
 
@@ -35,8 +35,8 @@ export {Users};
 // const Users = () => {
 //     const [users, setUsers] = useState([]);
 //     useEffect(() => {
-//         axiosService(urls.users.base).then(value => value.data())
-//             .then(value => setUsers(value))}, [])
+//         axiosService(urls.users.base).then(value => value.data)
+//             }, [])
 //     return (<div>{users.map(user => <User key={user.id} user={user}/>)}</div>
 //     );};
 // export {Users};
