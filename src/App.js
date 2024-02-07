@@ -1,9 +1,9 @@
-import {Users} from "./components/Users/Users";
+import {Posts} from "./components/PostsContainer/Posts";
 
 const App = () => {
     return (
         <div>
-           <Users/>
+            <Posts/>
         </div>
     );
 };

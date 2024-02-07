@@ -1,28 +1,15 @@
-const baseURL = 'https://api.spacexdata.com/v3'
+const jsonBaseUrl = 'https://jsonplaceholder.typicode.com'
+const spaceXBaseUrl ='https://api.spacexdata.com/v3'
 
 const posts = '/posts'
-const launches = '/launches'
+const launches = 'launches/'
+
 const urls = {
-    users: {
-        base:'/users',
-        byId: (id) => `${users}/${id}`
-    },
-    posts:{
-        base:posts,
-        byId: (id) => `${posts}/${id}`
-    }}
+    posts,
+    launches
+}
 export {
-    baseURL,
+    jsonBaseUrl,
+    spaceXBaseUrl,
     urls
 }
-// const baseURL='https://jsonplaceholder.typicode.com'
-// const users ='/users'
-// const posts ='/posts'
-// const urls ={
-//     users:{base:users,
-//         byId:(id)=>`${users}/${id}`},
-//     posts:{
-//         base:posts,
-//         byId:(id)=>`${posts}/${id}`}}
-// export {
-//     baseURL, urls}
