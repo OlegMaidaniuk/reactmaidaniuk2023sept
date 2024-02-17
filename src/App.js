@@ -1,10 +1,25 @@
-import {useState} from "react";
+import {useRef} from "react";
 const App = () => {
-    const [count, setCount] = useState(0);
+    // const nam = useRef();
+    // const ag = useRef();
+    const sa = () => {
+        // e.preventDefault()
+        // console.log(name.current.value);
+        // console.log(age.current.value);
+    //     console.log(e.target.nam.value);
+    //     console.log(e.target.ag.value);
+    // }
+    // const [count, setCount] = useState(0);
     return (
         <div>
-        <div> count:{}</div>
-            <button onClick={()=>setCount(count+1)}>inc</button>
+            {/*<div> count:{count}</div>*/}
+            {/*<button onClick={()=>setCount(count+1)}>inc</button>*/}
+            {/*<button onClick={() => setCount(prevState => prevState + 1)}>inc</button>*/}
+            <form>
+                <input type="text" placeholder={'name'}/>
+                <input type="text" placeholder={'age'}/>
+                <button onClick={sa}>save</button>
+            </form>
         </div>
     );
 };
