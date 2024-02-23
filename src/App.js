@@ -1,29 +1,52 @@
-import {useRef} from "react";
+import {PostsContainer} from "./components/PostsContainer/PostsContainer";
+//
+// import {useEffect, useState} from "react";
+// import {postService} from "./servicec/postService";
+
 const App = () => {
-    // const nam = useRef();
-    // const ag = useRef();
-    const sa = () => {
-        // e.preventDefault()
-        // console.log(name.current.value);
-        // console.log(age.current.value);
-    //     console.log(e.target.nam.value);
-    //     console.log(e.target.ag.value);
-    // }
-    // const [count, setCount] = useState(0);
     return (
         <div>
-            {/*<div> count:{count}</div>*/}
-            {/*<button onClick={()=>setCount(count+1)}>inc</button>*/}
-            {/*<button onClick={() => setCount(prevState => prevState + 1)}>inc</button>*/}
-            <form>
-                <input type="text" placeholder={'name'}/>
-                <input type="text" placeholder={'age'}/>
-                <button onClick={sa}>save</button>
-            </form>
+            <PostsContainer/>
         </div>
     );
 };
+
 export {App};
+
+
+
+
+
+
+
+
+// import {useRef} from "react";
+//
+// const App = () => {
+//     // const nam = useRef();
+//     // const ag = useRef();
+//     const sa = () => {
+//         // e.preventDefault()
+//         // console.log(name.current.value);
+//         // console.log(age.current.value);
+//     //     console.log(e.target.nam.value);
+//     //     console.log(e.target.ag.value);
+//     // }
+//     // const [count, setCount] = useState(0);
+//     return (
+//         <div>
+//             {/*<div> count:{count}</div>*/}
+//             {/*<button onClick={()=>setCount(count+1)}>inc</button>*/}
+//             {/*<button onClick={() => setCount(prevState => prevState + 1)}>inc</button>*/}
+//             <form>
+//                 <input type="text" placeholder={'name'}/>
+//                 <input type="text" placeholder={'age'}/>
+//                 <button onClick={sa}>save</button>
+//             </form>
+//         </div>
+//     );
+// };
+// export {App};
 
 // в апі писати неправильно але для швидкості створювали форму саме тут
 
