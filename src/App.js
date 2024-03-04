@@ -1,12 +1,9 @@
-import {PostsContainer} from "./components/PostsContainer/PostsContainer";
-//
-// import {useEffect, useState} from "react";
-// import {postService} from "./servicec/postService";
+import {CarsContainer} from "./components/CarsContainer";
 
 const App = () => {
     return (
         <div>
-            <PostsContainer/>
+            <CarsContainer/>
         </div>
     );
 };
